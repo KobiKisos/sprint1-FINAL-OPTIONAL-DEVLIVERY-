@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kobi's Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script
+    type="module" src = "JS\script.js">
+   </script>
+</head>
+<body> 
+    <div class="flex-container">
+        <div class="game-board">
+            <br>
+                <table id="board"></table>
+        </div>
+    </div>
+    <h3>1.Select your difficulty level:(* Easy = 4x4, 2 mines)(* Medium = 8x8, 12 mines)(* Hard = 16x16, 30 mines)</h3> 
+    <h3>2. Click anywhere on the board to begin and start the timer.
+        *The numbers depict how many mines are adjacent to any given cell.</h3>
+     <h3>3. Use **"Shift + Click"** to add flags to a cell if you think it's a mine.</h3>   
+     <h3> * If you hit a mine...the game is over.
+        * Win by uncovering all the cells without mines</h3>
+        <section id="footer">
+            <div id="start"><img src="IMG/start2.png"></div>
+            <div id="size-btns">
+                <div id="size-btns"><button class = " hoverSec" id="size-4"> Beginner</button></div> 
+                <div id="size-btns"><button class=" hoverThird" id="size-8"> Medium</button></div> 
+                <div id="size-btns"><button class = " hoverFourth" id="size-16"> Expert</button></div>
+            </div>
+            <div id="clock"><em>"Shift + Click"</em></strong> to toggle <img src="images/flag.png"></div>
+        </section>
+    <script src="js/cell.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
